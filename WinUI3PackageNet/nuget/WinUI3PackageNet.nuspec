@@ -15,14 +15,14 @@
 	  <file src="..\WinUI3PackageNet.targets" target="build\"/>
 
 	  <!--Note: This sample assumes the solution configuration and platform are set to Release and x64-->
-    <file src="..\..\AnyCPU\Debug\WinUI3PackageNet\bin\WinUI3PackageNet.dll" target="lib\net6.0-windows10.0.22621.0\WinUI3PackageNet.dll" />
-    <file src="..\..\AnyCPU\Debug\WinUI3PackageNet\bin\WinUI3PackageNet.pdb" target="lib\net6.0-windows10.0.22621.0\" />
-    <file src="..\..\AnyCPU\Debug\WinUI3PackageNet\bin\WinUI3PackageNet.pri" target="lib\net6.0-windows10.0.22621.0\" />
-    <file src="..\..\AnyCPU\Debug\WinUI3PackageNet\bin\WinUI3Package\*.*" target="lib\net6.0-windows10.0.22621.0\WinUI3Package\" />
+    <file src="net6.0-windows10.0.22621.0\WinUI3PackageNet.dll" target="lib\net6.0-windows10.0.22621.0\WinUI3PackageNet.dll" />
+    <file src="net6.0-windows10.0.22621.0\WinUI3PackageNet.pdb" target="lib\net6.0-windows10.0.22621.0\" />
+    <file src="net6.0-windows10.0.22621.0\WinUI3PackageNet.pri" target="lib\net6.0-windows10.0.22621.0\" />
+    <file src="net6.0-windows10.0.22621.0\WinUI3Package\*.*" target="lib\net6.0-windows10.0.22621.0\WinUI3Package\" />
     <!--Arch-specific implementation DLLs should be copied into RID-relative folders-->
-    <file src="..\..\x64\Debug\WinUI3Package\bin\WinUI3Package\WinUI3Package.dll" target="runtimes\win10-x64\native" />
-    <file src="..\..\x64\Debug\WinUI3Package\bin\WinUI3Package\WinUI3Package.pdb" target="runtimes\win10-x64\native" />
-    <file src="..\..\x64\Debug\WinUI3Package\bin\WinUI3Package\WinUI3Package.pri" target="runtimes\win10-x64\native" />
+    <file src="..\..\x64\Debug\WinUI3Package\WinUI3Package.dll" target="runtimes\win10-x64\native" />
+    <file src="..\..\x64\Debug\WinUI3Package\WinUI3Package.pdb" target="runtimes\win10-x64\native" />
+    <file src="..\..\x64\Debug\WinUI3Package\WinUI3Package.pri" target="runtimes\win10-x64\native" />
     <!--To support x86 and ARM64, build SimpleMathComponent for those other architectures and uncomment the entries below.-->
     <!--<file src="..\..\_build\Win32\Release\SimpleMathComponent\bin\SimpleMathComponent\SimpleMathComponent.dll" target="runtimes\win10-x86\native\SimpleMathComponent.dll" />-->
     <!--<file src="..\..\_build\arm64\Release\SimpleMathComponent\bin\SimpleMathComponent\SimpleMathComponent.dll" target="runtimes\win10-arm64\native\SimpleMathComponent.dll" />-->
