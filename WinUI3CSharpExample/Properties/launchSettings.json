@@ -1,0 +1,11 @@
+{
+  "profiles": {
+    "WinUI3CSharpExample (Package)": {
+      "commandName": "MsixPackage",
+      "nativeDebugging": true
+    },
+    "WinUI3CSharpExample (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
