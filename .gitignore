@@ -431,3 +431,4 @@ coverage
 *.sw?
 
 *.tsbuildinfo
+/WinUI3PackageNet/nuget/net6.0-windows10.0.22621.0
