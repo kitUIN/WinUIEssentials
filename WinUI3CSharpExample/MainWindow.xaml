@@ -1,19 +1,59 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <Window
     x:Class="WinUI3CSharpExample.MainWindow"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:WinUI3CSharpExample"
-    xmlns:essential="using:WinUI3Package"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:essential="using:WinUI3Package"
+    xmlns:local="using:WinUI3CSharpExample"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d"
-    Title="WinUI3CSharpExample">
+    Title="WinUI3CSharpExample"
+    mc:Ignorable="d">
 
     <NavigationView
         IsSettingsVisible="False"
         MenuItemsSource="{x:Bind Pages}"
         SelectionChanged="NavigationView_SelectionChanged">
-        <Frame x:Name="ContentFrame" />
+        <NavigationView.Resources>
+
+
+            <essential:SegmentedMarginConverter x:Name="Converter" LeftItemMargin="{StaticResource MyMargin}" />
+        </NavigationView.Resources>
+        <Frame
+            x:Name="ContentFrame"
+            Margin="{StaticResource MyMargin}"
+            CornerRadius="{StaticResource MyRadius}">
+            <essential:Segmented
+                HorizontalAlignment="Left"
+                IsEnabled="True"
+                SelectedIndex="1"
+                SelectionMode="Single">
+                <essential:SegmentedItem>
+                    <StackPanel Orientation="Horizontal" Spacing="8">
+                        <FontIcon Glyph="&#xEA3A;" />
+                        <TextBlock Text="Item1" />
+                    </StackPanel>
+                </essential:SegmentedItem>
+                <essential:SegmentedItem>
+                    <StackPanel Orientation="Horizontal" Spacing="8">
+                        <FontIcon Glyph="&#xEA3A;" />
+                        <TextBlock Text="Item2" />
+                    </StackPanel>
+                </essential:SegmentedItem>
+                <essential:SegmentedItem>
+                    <StackPanel Orientation="Horizontal" Spacing="8">
+                        <FontIcon Glyph="&#xEA3A;" />
+                        <TextBlock Text="Item3 with a long label" />
+                    </StackPanel>
+                </essential:SegmentedItem>
+                <essential:SegmentedItem>
+                    <StackPanel Orientation="Horizontal" Spacing="8">
+                        <FontIcon Glyph="&#xEA3A;" />
+                        <TextBlock Text="Item4" />
+                    </StackPanel>
+                </essential:SegmentedItem>
+            </essential:Segmented>
+
+        </Frame>
     </NavigationView>
 </Window>
